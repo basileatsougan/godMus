@@ -22,7 +22,7 @@ const ArtistSection = ({ title, data }) => {
                 backgroundColor: "gray",
               }}
             />
-            <Text style={{ color: "white", fontSize: 16 }}>{item.name}</Text>
+            <Text style={{ color: "white", fontSize: 16, textAlign: "center" }}>{item.name}</Text>
           </TouchableOpacity>
         )}
         showsHorizontalScrollIndicator={false}
