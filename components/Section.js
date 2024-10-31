@@ -1,12 +1,27 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
+import React from "react";
 
-const Section = () => {
+const Section = ({ title, data }) => {
   return (
-    <View>
-      <Text>Section</Text>
+    <View style={{ marginVertical: 16 }}>
+      <Text style={{ color: "white", marginHorizontal: 12, fontSize: 20 }}>{title}</Text>
+      <FlatList
+        data={data}
+        horizontal
+        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => (
+          <TouchableOpacity style={{ marginHorizontal: 12 }}>
+            <Image
+              souce={item.imageUrl}
+              style={{ height: 100, width: 100, borderRadius: 8 }}
+            />
+            <Text style={{ color: "white", fontSize: 16 }}>{item.title}</Text>
+            <Text style={{ color: "gray", fontSize: 14 }}>{item.author}</Text>
+          </TouchableOpacity>
+        )}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

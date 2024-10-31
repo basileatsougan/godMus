@@ -9,7 +9,7 @@ import simiane from "../assets/images/artiste/simiane.jpg";
 
 import davidson_madziha from "../assets/images/gospel/davidson_madziha.jpg"
 import ks_bloom_foutou from "../assets/images/gospel/ks_bloom_foutou.jpg"
-import mourijah_mon_ami from "../assets/images/gospel/mourijah_mon_ami.jpg"
+import morijah_mon_ami from "../assets/images/gospel/morijah_mon_ami.jpg"
 
 
 export default {
@@ -24,6 +24,6 @@ export default {
 
     davidson_madziha,
     ks_bloom_foutou,
-    mourijah_mon_ami,
+    morijah_mon_ami,
 }
 
